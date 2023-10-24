@@ -32,11 +32,15 @@ export default {
     },
     methods: {
         addTodo() {
+            if (!this.title) {
+                return;
+            }
             this.$store.dispatch('addTodo', {
                 title: this.title,
                 completed: false
+            }).finally(() => {
+                this.title = ''
             })
-            console.log('here', this.title)
         }
     },
 }
