@@ -1,94 +1,24 @@
 {
   "todos": [
     {
-      "title": "Estudar javascriptttt",
+      "title": "rarar",
       "completed": true,
       "id": 1
     },
     {
-      "title": "Estudar Vue",
-      "completed": true,
+      "title": "1231 12312 ",
+      "completed": false,
       "id": 2
     },
     {
-      "title": "Estudar composition API",
-      "completed": true,
+      "title": "ASJKd hasjkdhAS JKHD",
+      "completed": false,
       "id": 3
     },
     {
-      "title": "asdasd",
-      "completed": false,
-      "id": 4
-    },
-    {
-      "title": "abc",
+      "title": "ler livro",
       "completed": true,
-      "id": 5
-    },
-    {
-      "title": "321",
-      "completed": false,
-      "id": 6
-    },
-    {
-      "title": "teste 123 123",
-      "completed": false,
-      "id": 7
-    },
-    {
-      "title": "aaa",
-      "completed": false,
-      "id": 8
-    },
-    {
-      "title": "1111111",
-      "completed": false,
-      "id": 9
-    },
-    {
-      "title": "asdasdasd asd asdsa",
-      "completed": false,
-      "id": 10
-    },
-    {
-      "title": "apagar titlte",
-      "completed": false,
-      "id": 11
-    },
-    {
-      "title": " vvvvvvvv",
-      "completed": false,
-      "id": 12
-    },
-    {
-      "title": " ",
-      "completed": false,
-      "id": 13
-    },
-    {
-      "title": " ",
-      "completed": false,
-      "id": 14
-    },
-    {
-      "title": " ",
-      "completed": false,
-      "id": 15
-    },
-    {
-      "title": "asda",
-      "completed": false,
-      "id": 16
-    },
-    {
-      "title": "1231231",
-      "completed": false,
-      "id": 17
-    },
-    {
-      "title": "1 posi",
-      "completed": false,
-      "id": 18
+      "id": 4
     }
   ]
 }

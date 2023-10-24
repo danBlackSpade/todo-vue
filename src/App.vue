@@ -9,8 +9,9 @@
             <TodoSpinner v-if="loading" />
             <div class v-else>
               <TodoFormAdd />
-              <TodoItems />
-              <TodoEmpty />
+              <TodoItems v-if="$store.state.todos.length" />
+              
+              <TodoEmpty v-else />
             </div>
         </div>
     </div>
