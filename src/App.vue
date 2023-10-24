@@ -2,9 +2,6 @@
 
     <div class="px-3 py-10 md:px-10">
         <div class="w-full sm:w-1/2 lg:w-1/3 mx-auto">
-          <!-- <pre>
-            {{ $store.state.todos }}
-          </pre> -->
 
             <TodoSpinner v-if="loading" />
             <div class v-else>
@@ -26,6 +23,8 @@ import TodoFormAdd from '@/components/TodoFormAdd'
 import TodoItems from '@/components/TodoItems.vue';
 import TodoSpinner from '@/components/TodoSpinner.vue';
 import TodoEmpty from '@/components/TodoEmpty';
+import { ref } from 'vue'
+import { useStore } from 'vuex';
 
 export default {
   name: 'App',
@@ -35,20 +34,21 @@ export default {
     TodoSpinner,
     TodoEmpty
   },
-  data() {
-    return {
-      todos: [
 
-      ],
-      loading: false
-    }
-  },  
-  created() {
-    this.loading = true
-    this.$store.dispatch('getTodos').then(() => {
-      this.loading = false
+  setup() {
+    const loading = ref(false)
+    const store = useStore()
+
+    loading.value = true
+    store.dispatch('getTodos').finally(() => {
+      loading.value = false
     })
-  }
+
+    return {
+      loading,
+    }
+  },
+
 
 }
 </script>
